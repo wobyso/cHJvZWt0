@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('7259035129:AAHNsw2GyJDFNwNDKczcMymsxIAso58i6iA')
+bot = telebot.TeleBot('YOUR_TOKEN')
 
 
 def ask_for_flag(message):
