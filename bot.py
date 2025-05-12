@@ -14,7 +14,6 @@ def ask_for_flag(message):
 
 def check_flag(message):
     user_flag = message.text.strip()
-    # Проверка флагов для разных заданий
     if user_flag == "FLAG{flag_1}":
         bot.send_message(message.chat.id, "✅ Верный флаг для задания One! Поздравляем!")
     elif user_flag == "FLAG{flag_2}":
@@ -26,7 +25,6 @@ def check_flag(message):
     else:
         bot.send_message(message.chat.id, "❌ Неверный флаг. Попробуйте еще раз!")
 
-    # Возвращаем пользователя к списку задач
     markup = types.InlineKeyboardMarkup()
     button1 = types.InlineKeyboardButton("One", callback_data='One', url="https://cloud.mail.ru/public/21xw/xMs3vX3DS")
     button2 = types.InlineKeyboardButton("Ctf", callback_data='Ctf', url="https://cloud.mail.ru/public/V37x/gJKn2vABE")
